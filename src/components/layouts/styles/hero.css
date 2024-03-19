@@ -1,38 +1,54 @@
 .hero {
   display: grid;
-  grid-template-columns: auto 1fr; /* thumbnail y el contenedor de texto */
-  align-items: center; /* Alineación vertical */
-
-  gap: 2rem; /* Espacio entre el thumbnail y el texto */
-  padding: 100px 50px;
-
-/* 
-  background: #071d1d; */
-  height: 50vh;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
   border-radius: 50px;
+  margin-bottom: 8rem;
+  /* height: 80vh; */
+  /* border: 1px solid red;
+   */
+  /* background: #071d1d;  */
+  /* background: #fff;  */
+
+  overflow: hidden; /* Esto evitará que el contenido se salga */
 }
-
-
-
 
 /* Asegúrate de que el Thumbnail tenga un tamaño adecuado */
-.thumbnail-container {
-  width: 350px; /* o el tamaño que prefieras */
-  height: 350px; /* mantiene la proporción de la imagen de perfil */
-  display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  /*border-radius: 50%;  hace el div redondo */
-  overflow: hidden; /* oculta el exceso de imagen */
+.thumbnail-container{
+  max-width: 100%; 
+  max-height: 100%;
+  overflow: hidden;
+  width: 400px; 
+  height: 400px;
 }
-.presentacion{
+
+
+
+.parrafo{
   font-size: 1.6rem;
   font-weight: 600;
-  /* color: rgb(255, 255, 255); */
   background-image: linear-gradient(to right, #a6e9de,#71d7ca, #2aa297);
   color: transparent; 
   -webkit-background-clip: text;
   background-clip: text;
   display: inline;
-  padding-top: 10px; /* Ajuste para separar del título */
 }
+
+
+  @media screen and (max-width: 1150px) {
+    .hero {
+      display: flex;
+      flex-direction: column; /* Cambia la dirección de flex a columna */
+    }
+    .thumbnail-container{
+    }
+    .presentacion {
+      text-align: center;
+    }
+    .parrafo {
+      padding: 0 40px;
+      display: block; 
+    }
+  }

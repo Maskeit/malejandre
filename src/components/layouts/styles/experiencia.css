@@ -59,12 +59,10 @@
     grid-column: 1 / -1; /* La tercera tarjeta ocupa todo el ancho */
   }
   .technologies {
-    border: 1px solid blue;
     grid-template-columns: 1fr 1fr;
   }
 
   .conferencias {
-    border: 1px solid blue;
     grid-template-columns: 1fr 1fr;
   }
 }

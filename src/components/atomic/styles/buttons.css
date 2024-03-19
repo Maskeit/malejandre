@@ -1,18 +1,37 @@
-.scroll-btn {
+/*Component: BackScroll */
+  .smooth-back{
+    display: none;
+  }
+  /* Component: ScrollItem */
+
+  .scroll-indicator {
+    display: grid;
+    place-items: center;
     position: fixed;
     bottom: 20px;
-    right: 20px; 
-    padding: 10px 20px; 
-    font-size: 16px;
-    border: none; 
-    background-color: #4ab3f0;
-    color: #fff; 
-    cursor: pointer; 
-    border-radius: 5px;
-    z-index: 1000;
+    left: 0;
+    right: 0;
   }
-
-/* Agrega estilos adicionales para transiciones o efectos visuales según necesites */
-.scroll-btn:hover {
-    background-color: #ddcece;
+  
+  .scroll-indicator p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    color: #ffffff;
+    transition: opacity 0.3s, transform 0.3s;
   }
+  
+  .scroll-indicator p:hover {
+    transform: scale(1.1); /* Un ligero efecto de zoom al pasar el mouse por encima */
+    opacity: 0.8; /* Un poco más opaco para el hover */
+  }
+  
+  .line {
+    width: 2px;
+    height: 100px;
+    background-color: #9dc4d3;
+    transition: height 0.3s ease-out;
+  }
+  

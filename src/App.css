@@ -27,10 +27,9 @@
   transform: translateY(10%); /* Desplaza el header solo la mitad hacia arriba */
 }
 
-.main-page {
-  /* padding: 2em; */
-  /* border: solid 1px white; */
-}
+
+
+
 
 .btn-scroll{
   animation: show-scroll linear both;
