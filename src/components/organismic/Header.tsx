@@ -29,7 +29,9 @@ export const Header = () => {
   return (
     <div className={`navbar-list ${!navbarVisible && 'header-hidden'}`}>
       <Link to={"/"}><button className='navbar-button'>Inicio</button></Link>
-      <Link to={"/Projects"}><button className='navbar-button'>Projects</button></Link>
+      <Link to={"/About"}><button className='navbar-button'>Sobre mi</button></Link>
+      <Link to={"/Projects"}><button className='navbar-button'>Proyectos</button></Link>
+      <Link to={"/Contact"}><button className='navbar-button'>Contactame</button></Link>
     </div>  
   );
 };

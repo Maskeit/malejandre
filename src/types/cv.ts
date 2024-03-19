@@ -1,12 +1,32 @@
-export interface Basics {
-  name:string;
-  label:string;
-  image:string;
-  email:string;
-  phone:string;
-  url:string;
-  summary:string;
+// Define la interfaz para un perfil, por ejemplo, LinkedIn o GitHub
+export interface Profile {
+  network: string;
+  username: string;
+  url: string;
 }
+
+// Define la interfaz para la ubicación
+export interface Location {
+  address: string;
+  postalCode: string;
+  city: string;
+  countryCode: string;
+  region: string;
+}
+
+// Extiende la interfaz Basics con las nuevas interfaces
+export interface Basics {
+  name: string;
+  label: string;
+  image: string;
+  email: string;
+  phone: string;
+  url: string;
+  summary: string;
+  location: Location; // Aquí Location es un objeto, no un array
+  profiles: Profile[]; // Aquí Profiles es un array de objetos Profile
+}
+
 
 export interface Work {
   name: string;

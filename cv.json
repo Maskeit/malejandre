@@ -16,14 +16,19 @@
     },
     "profiles": [
       {
-        "network": "LinkedIn",
+        "network": "linkedin",
         "username": "Miguel Alejandre",
         "url": "https://www.linkedin.com/in/miguel-alejandre-901421259/"
       },
       {
-        "network": "GitHub",
+        "network": "github",
         "username": "Maskeit",
         "url": "https://github.com/Maskeit/"
+      },
+      {
+        "network": "gmail",
+        "username": "",
+        "url": "miguelagustin182@gmail.com"
       }
     ]
   },

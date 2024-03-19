@@ -19,6 +19,7 @@
   transition: all 0.3s ease;
   border-radius: 50px;
   letter-spacing: 2px;
+  color:#fff ;
 }
 
 .navbar-button:hover {
@@ -29,16 +30,3 @@
   font-family: inherit;
   color: rgb(0, 0, 0);
 }
-
-
-
-/* background: transparent;
-padding: 0.6em 1.5em;
-font-size: 1em;
-margin: 0 10px;
-cursor: pointer;
-font-family: inherit;
-transition: all 0.3s ease;
-font-weight: 400;
-align-items: center;
-justify-content: center; */
