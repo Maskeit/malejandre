@@ -1,0 +1,261 @@
+{
+  "basics": {
+    "name": "Miguel Alejandre",
+    "label": "Ingeniero de Software",
+    "image": "maskeit.jpg",
+    "email": "miguelagustin182@gmail.com",
+    "phone": "(314) 166-9056",
+    "url": "",
+    "summary": "Desarrollador de software experimentado con sólidas habilidades de front-end en JavaScript, ReactJS, Tailwind, HTML5 y CSS3. Competente en tecnologías backend, incluidas PHP, Java, Python y Node.js (ExpressJS), con experiencia en bases de datos tanto relacionales (MySQL) como no relacionales (MongoDB). Uso de herramientas como git y github. Experimentado en entrenamiento de modelos ML y aplicado al reconocimiento de imágenes. Certificado en SCRUM, demostrando dominio en metodologías ágiles. Fuertes habilidades de liderazgo y habilidades efectivas para hablar en público, complementadas con un compromiso con soluciones de software innovadoras y eficientes.",
+    "location": {
+      "address": "Agachona Comun 433",
+      "postalCode": "28864",
+      "city": "Manzanillo",
+      "countryCode": "MX",
+      "region": "Colima"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Miguel Alejandre",
+        "url": "https://www.linkedin.com/in/miguel-alejandre-901421259/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Maskeit",
+        "url": "https://github.com/Maskeit/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "CISnatura",
+      "position": "Full Stack Engineer",
+      "url": "https://cisnaturatienda.com.mx",
+      "startDate": "2023-08-01",
+      "endDate": "2024-01-30",
+      "summary": "Actualmente me encuentro en el desarrollo de un Ecommerce para la venta de productos naturistas y remedios herbolarios implementando pasarelas de pago.",
+      "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
+      "thumb": "./src/assets/cisnatura_02.webp",
+      "logo": "./src/assets/logo/cisnatura.svg"
+    },
+    {
+      "name": "Localito",
+      "position": "Android Developer",
+      "url": "https://cisnaturatienda.com.mx",
+      "startDate": "2023-08-01",
+      "endDate": "2023-12-01",
+      "summary": "Colaboré en el desarrollo de una aplicación movil para fomentar el comercio local.",
+      "highlights": ["Java y XML Material Design 3"],
+      "thumb": "./src/assets/localito_01.webp",
+      "logo": "./src/assets/logo/localito.svg"
+    },
+    {
+      "name": "SmartCrowd",
+      "position": "Backend Engineer",
+      "url": "https://cisnaturatienda.com.mx",
+      "startDate": "2023-02-01",
+      "endDate": "2023-06-01",
+      "summary": "Utilizando tecnicas de ML, desarrollé un modelo para la deteccion de personas implementada en una Raspberry Pi.",
+      "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
+      "thumb": "./src/assets/NN.webp",
+      "logo": "./src/assets/logo/smartcrowd.svg"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": ["Awarded 'Volunteer of the Month'"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad de Colima",
+      "url": "https://www.ucol.mx/",
+      "area": "Ingeniero de Software",
+      "studyType": "Licenciatura",
+      "startDate": "2021-08-15",
+      "endDate": "",
+      "score": "",
+      "courses": [""]
+    },
+    {
+      "institution": "Universidad de Colima",
+      "url": "https://www.ucol.mx/",
+      "area": "Técnico en Contabilidad",
+      "studyType": "Bachillerato",
+      "startDate": "2017-08-15",
+      "endDate": "2020-06-15",
+      "score": "",
+      "courses": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Scrum Foundation Professional Certification - SFPC",
+      "date": "2022",
+      "issuer": "CertiProof",
+      "url": "https://www.credly.com/badges/cd8e2f2f-eba4-4809-b55b-5f4e14e845f7/linked_in_profile"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Typescript",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "PHP",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Backend"]
+    },
+    {
+      "name": "Python",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Backend"]
+    },
+    {
+      "name": "C",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Backend"]
+    },
+    {
+      "name": "Java",
+      "level": "Master",
+      "keywords": ["Desarrollo movil", "Backend"]
+    },
+    {
+      "name": "ReactJS",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Node",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "MySQL",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Git",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Astro",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Linux",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    },
+    {
+      "name": "Android",
+      "level": "Master",
+      "keywords": ["Desarrollo web", "Frontend"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Conversacional"
+    },
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Musica",
+      "keywords": ["bajo", "Unicorns"]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "CISnatura",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Ecommerce de productos naturistas y remedios herbolarios.",
+      "highlights": ["Desarrollo web"],
+      "url": "#"
+    },
+    {
+      "name": "Localito",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Aplicación de comercio local para dispositivos móviles android",
+      "highlights": ["Android Studio","API"],
+      "url": "https://github.com/PI5-Localito/Localito-Android"
+    },
+    {
+      "name": "SmartCrowd",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Software de reconocimiento de imagenes para el control del aforo, montado en una raspberry",
+      "highlights": ["OpenCV","IA","Raspberry Pi", "Azure"],
+      "url": "https://github.com/Maskeit/proyecto-integrador-4"
+    },
+    {
+      "name": "BlasterBlog",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Blog de arte y diseño 3D para creadores, artistas y aficionados del sofware de modelado en 3D",
+      "highlights": ["Blender","Desarrollo web"],
+      "url": "https://github.com/Maskeit/blasterblog.site"
+    }
+  ]
+}

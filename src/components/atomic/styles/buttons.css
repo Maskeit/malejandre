@@ -1,0 +1,18 @@
+.scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px; 
+    padding: 10px 20px; 
+    font-size: 16px;
+    border: none; 
+    background-color: #4ab3f0;
+    color: #fff; 
+    cursor: pointer; 
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+/* Agrega estilos adicionales para transiciones o efectos visuales según necesites */
+.scroll-btn:hover {
+    background-color: #ddcece;
+  }

@@ -1,0 +1,89 @@
+.experiencia{
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.experiencia-title{
+    text-align: start;
+}
+.experiencia-contenido{
+  display: grid;
+  /* border: 1px solid red; */
+  gap: 5rem;
+}
+
+
+.cards-section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+}
+
+.technologies{
+  display: grid;
+  /* border: 1px solid red; */
+  justify-items: end;
+  align-items: center;
+  grid-template-columns: 2fr 1fr;
+}
+
+
+.languages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-template-rows: repeat(4, 1fr); /* 4 filas */
+  justify-items: center;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  padding: 2rem;
+  border-radius: calc(var(--curve) * 1px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(50, 72, 82, 0.719); /* blanco con media opacidad */
+}
+
+@media screen and (max-width: 1150px) {
+  .experiencia-contenido {
+    grid-template-columns: 1fr; /* Todo se apila en columna */
+  }
+
+  .cards-section {
+    grid-template-columns: 1fr 1fr; /* Dos columnas para las primeras dos tarjetas */
+  }
+
+  .cards-section > :nth-child(3) {
+    grid-column: 1 / -1; /* La tercera tarjeta ocupa todo el ancho */
+  }
+  .technologies {
+    border: 1px solid blue;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .conferencias {
+    border: 1px solid blue;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.conferencias{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1fr 2fr;
+}
+
+.img-conf > img{
+  width: 450px;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+  /* border: 1px solid red; */
+  /* background-image: url(../../../assets/NN.webp);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; */

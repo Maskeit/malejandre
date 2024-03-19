@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+/* .header-just{
+  display: grid;
+  justify-content: center;
+} */
+.header-component {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0; /* Posición inicial en la parte superior */ /* Asegúrate de que ocupe todo el ancho */
+  z-index: 10; /* Asegura que el header esté sobre otros elementos */
+  transition: transform 0.6s; /* Transición suave para el efecto de deslizar */  
+}
+
+/* Clase para ocultar parcialmente el navbar */
+.header-hidden {
+  transition: transform 0.6s;
+  transform: translateY(-75%); /* Desplaza el header solo la mitad hacia arriba */
+}
+.header-hidden:hover {
+  transition: transform 0.3s;
+  transform: translateY(10%); /* Desplaza el header solo la mitad hacia arriba */
+}
+
+.main-page {
+  /* padding: 2em; */
+  /* border: solid 1px white; */
+}
+
+.btn-scroll{
+  animation: show-scroll linear both;
+  animation-timeline: scroll(root);
+  animation-range: 0 100px;
+}
+
+@keyframes show-scroll {
+
+  from{
+    display: none;
+  }
+  to{
+    display: block;
+  }
+}

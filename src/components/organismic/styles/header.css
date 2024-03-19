@@ -1,0 +1,44 @@
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(50, 72, 82, 0.5); /* blanco con media opacidad */
+  padding: 10px 20px;
+  border-radius: 100px;
+}
+
+.navbar-button {
+  font-size: 1.1em;
+  font-family: inherit;
+  padding: 0.6em 1.5em;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+  letter-spacing: 2px;
+}
+
+.navbar-button:hover {
+  /* Efecto para cuando se pasa el mouse por encima */
+  background-color: rgba(255, 255, 255, 0.5); /* Aumenta opacidad */
+  border: 0px rgba(255, 255, 255, 0.404) solid;
+  border-radius: 50px;
+  font-family: inherit;
+  color: rgb(0, 0, 0);
+}
+
+
+
+/* background: transparent;
+padding: 0.6em 1.5em;
+font-size: 1em;
+margin: 0 10px;
+cursor: pointer;
+font-family: inherit;
+transition: all 0.3s ease;
+font-weight: 400;
+align-items: center;
+justify-content: center; */

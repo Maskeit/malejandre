@@ -1,0 +1,22 @@
+.social-icon > img{
+  padding: 10px;
+  max-width: 30px;
+  min-width: 15px;
+  background: #1a4955;
+  border: 1px solid #1a4955;
+  border-radius: 8px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.social-icon > img:hover{
+  background-color: #2f7c8f;
+}
+
+
+/* tengo 16 divs por lo que quiero hacer 4 x 4, 4 filas y 4 columnas */
+.language-icon{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
