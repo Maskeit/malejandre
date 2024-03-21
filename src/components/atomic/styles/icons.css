@@ -1,18 +1,24 @@
-.social-icon > img{
-  padding: 10px;
-  max-width: 30px;
-  min-width: 15px;
+.social-icon {
   background: #1a4955;
-  border: 1px solid #1a4955;
-  border-radius: 8px;
-  transition: 0.3s;
-  cursor: pointer;
+  border: 1px solid #b0b3b4;
+  padding: 12px;
+  border-radius: 15px;
+  display: flex; /* Asegúrate de que los íconos estén centrados dentro del botón */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
-.social-icon > img:hover{
-  background-color: #2f7c8f;
+/* Asegúrate de que el SVG tenga un tamaño específico */
+.social-icon svg {
+  width: 50px; /* o cualquier otro tamaño que desees */
+  height: 50px;
+  fill: currentColor; /* Esto hará que tome el color de texto actual */
 }
 
+/* Puedes usar esta clase para establecer el color del ícono si es necesario */
+.social-icon svg {
+  fill: #ffffff; /* o cualquier color que quieras para tus íconos */
+}
 
 /* tengo 16 divs por lo que quiero hacer 4 x 4, 4 filas y 4 columnas */
 .language-icon{
