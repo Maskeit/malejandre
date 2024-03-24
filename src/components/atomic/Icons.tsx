@@ -40,16 +40,19 @@ export const LanguageIcon = ({ name }: Skills) => {
   return <Icon className="language-icon" />;
 };
 
-export const SocialIcon = ({network, url}: Profile) => {
+export const SocialIcon = ({ network, url }: Profile) => {
   const IconComponent = ICONS[network];
-  if(!IconComponent){
+  if (!IconComponent) {
+    // Puedes mejorar este mensaje para depuración
+    console.error(`Icono no encontrado para la red: ${network}`);
     return <div>Icono no disponible</div>;
   }
+
   return (
-    <div  className='social-icon'>
-      <a href={url}target="_blank" rel="noopener noreferrer">
-        <IconComponent />
+    <div className='social-icon'>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <IconComponent width="50" height="50" />
       </a>
     </div>
   );
-}
+};

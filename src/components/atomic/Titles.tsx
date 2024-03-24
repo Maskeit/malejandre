@@ -19,10 +19,8 @@ export const TitlesH1 = ({text}) => {
 
 export const Parragraph = ({text}) =>{
   return (
-      <div>
         <span className='parrafos'>
           {text}
         </span>
-      </div>
   ) 
 }

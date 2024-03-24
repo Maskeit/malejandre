@@ -35,3 +35,23 @@
     transition: height 0.3s ease-out;
   }
   
+
+  .contact-btn{
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+  }
+  .contact-btn.green{
+    background-color: #47c558;  
+  }
+  .contact-btn.gray{
+    background-color: #1a4955;  
+  }
+  .contact-btn.blue{
+    background-color: #4998ff;  
+  }

@@ -55,3 +55,11 @@ export const ScrollItem = () => {
     </div>
   );
 };
+
+export const ContactButton = ({ btntext, bgColor }) => {
+  return (
+    <button className={`contact-btn ${bgColor}`}>
+      {btntext}
+    </button>
+  );
+};
