@@ -2,6 +2,17 @@ import React, { useState, useEffect } from 'react';
 import './styles/icons.css'
 import { Skills, Profile} from '../../types/cv'
 
+import Linkedin from '../../icons/Linkedin';
+import Github from '../../icons/Github';
+import Gmail from '../../icons/Gmail';
+
+
+// Objeto para mapear los nombres de red a los componentes SVG
+const ICONS = {
+  linkedin: Linkedin,
+  github: Github,
+  gmail: Gmail
+}; 
 export const LanguageIcon = ({ name }: Skills) => {
   const [Icon, setIcon] = useState<React.ElementType | null>(null);
 
@@ -29,36 +40,19 @@ export const LanguageIcon = ({ name }: Skills) => {
   return <Icon className="language-icon" />;
 };
 
-export const Icons = () => {
-  return (
-    <div>Icons</div>
-  )
-}
-
 export const SocialIcon = ({ network, url }: Profile) => {
-  const [iconSrc, setIconSrc] = useState('');
-
-  useEffect(() => {
-    // Vite maneja los archivos estáticos con una sintaxis especial cuando se usan rutas dinámicas.
-    // Asegúrate de que los nombres de archivo SVG coincidan con los valores 'network' y estén en el directorio correcto.
-    const iconPath = `/icons/${network}.svg`;
-
-    // Vite coloca los archivos estáticos en el directorio public durante el build, así que puedes referenciarlos directamente
-    fetch(iconPath)
-      .then((res) => {
-        if (!res.ok) throw new Error(`Could not find ${iconPath}`);
-        return res.text();
-      })
-      .then((data) => setIconSrc(data))
-      .catch(console.error); // Siempre es bueno tener un manejo de errores
-  }, [network]);
-
-  // Si iconSrc está vacío, muestra un placeholder o null
-  if (!iconSrc) {
-    return <div>Cargando ícono...</div>;
+  const IconComponent = ICONS[network];
+  if (!IconComponent) {
+    // Puedes mejorar este mensaje para depuración
+    console.error(`Icono no encontrado para la red: ${network}`);
+    return <div>Icono no disponible</div>;
   }
 
   return (
-    <a href={url} className='social-icon' target="_blank" rel="noopener noreferrer"><iconSrc/></a>
-);
+    <div className='social-icon'>
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <IconComponent width="50" height="50" />
+      </a>
+    </div>
+  );
 };
