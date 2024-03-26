@@ -1,6 +1,6 @@
 .social-icons{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: stretch;
     gap:20px;
   }

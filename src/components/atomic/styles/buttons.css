@@ -55,3 +55,19 @@
   .contact-btn.blue{
     background-color: #4998ff;  
   }
+
+
+  /* COmponente del boton para abrir sidebar */
+
+.sidebar-menu{
+  backdrop-filter: blur(9px);
+  background-color: rgba(50, 72, 82, 0.514);
+  border:none;
+  border-radius: 8px;
+  padding: 4px;
+  left: 5vw;
+  top: 5vh;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 100;
+}

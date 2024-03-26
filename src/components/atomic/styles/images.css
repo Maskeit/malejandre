@@ -9,7 +9,27 @@
     width: 100%;
     height: 100%;
     border-radius: 25px;
+    object-fit: cover;    
+}
+
+.logo{
+    border: none;
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+}
+
+.first{
+    width: 50px;
+}
+.sec{
+    width: 75px;
+}
+.three{
+    width: 100px;
+}
+
+.four{
+    width: 250px;
+    height: 100px;
     object-fit: cover;
 }
