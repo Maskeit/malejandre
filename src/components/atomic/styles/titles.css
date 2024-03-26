@@ -1,6 +1,4 @@
 .principal-title{
-    /* Esta es una combinación de colores vibrantes y complementarios */
-    font-size: 4.5rem;
     font-weight: 600;
     background-image: linear-gradient(to right, #a6e9de,#71d7ca, #2aa297);
     color: transparent;
@@ -8,11 +6,11 @@
     background-clip: text;  
     display: block; 
     margin-bottom: 10px;
+    animation: vanishedIn  1.4s ease-out 0s 1;
 }
 
 .h1-title{
     /* Esta es una combinación de colores vibrantes y complementarios */
-    font-size: 2.5rem;
     font-weight: 600;
     background-image: linear-gradient(to right, #a6e9de,#71d7ca, #2aa297);
     color: transparent; 
@@ -23,7 +21,6 @@
 }
 
 .parrafos{
-    font-size: 1.6rem;
     font-weight: 500;
     background-image: linear-gradient(to right, #a6e9de,#71d7ca, #2aa297);
     color: transparent; 
@@ -31,6 +28,15 @@
     background-clip: text;  
 }
 
-@media screen and (max-width: 1150px) {
-    
+
+
+/* Animations */
+
+@keyframes vanishedIn {
+    0%{
+        opacity: 0;        
+    }
+    100%{
+        opacity: 1;
+    }
 }

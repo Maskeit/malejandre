@@ -1,6 +1,6 @@
 import React from "react";
 import cv from "../../../cv.json";
-import { TitlesH1, Parragraph } from "../atomic/Titles";
+import { TitlesH1,PrincipalTitles, Parragraph } from "../atomic/Titles";
 import { ExperienciaCard } from "../molecular/ExperienciaCard";
 import { Work, Skills } from "../../types/cv";
 import { LanguageIcon } from "../atomic/Icons";
@@ -12,11 +12,10 @@ import "./styles/experiencia.css";
 export const Experiencia = () => {
   return (
     <div className="experiencia">
-      <div className="experiencia-title">
-        <TitlesH1 text="Un poco sobre mi trabajo" />
-      </div>
+      {/* <div className="experiencia-title">
+      </div> */}
       <div className="experiencia-contenido">
-
+        <PrincipalTitles title="Un poco sobre lo que he desarrollado" />
         <div className="cards-section">
           {cv.work.map((expItem: Work, index) => (
             <ExperienciaCard key={index} {...expItem} />
@@ -32,11 +31,9 @@ export const Experiencia = () => {
           </div>
         </div>
 
-        <div className="conferencias">
-          <div className="img-conf">
-            <Image src={conf}/>
-          </div>
-            <Parragraph text="Adicionalmente, tambien doy conferencias sobre temas de tecnologia, compartiendo ideas y sobre todo el gusto por el desarrollo de software." />
+        <div className="more">
+          <Image src={conf}/>
+          <Parragraph text="Saber mas..." />
         </div>
 
       </div>
