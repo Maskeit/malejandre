@@ -16,8 +16,8 @@
     color: transparent; 
     -webkit-background-clip: text;
     background-clip: text;  
-    display: block; 
-    margin-bottom: 30px;
+    display: block;    
+    box-sizing: border-box;
 }
 
 .parrafos{
@@ -40,3 +40,43 @@
         opacity: 1;
     }
 }
+
+.vanished{
+    animation: vanishedIn  1.4s ease-out 0s 1;
+}
+
+.fs-one{
+    font-size: 2rem;
+}
+
+.fs-one-mid{
+    font-size: 2.5rem;
+}
+
+.fs-two{
+    font-size: 3rem;
+}
+.fs-two-mid{
+    font-size: 3.5rem;
+}
+
+.fs-tree{
+    font-size: 4rem;
+}
+
+.fs-tree-mid{
+    font-size: 4.5rem;
+}
+
+.fs-four{
+    font-size: 5rem;
+}
+
+.fs-four-mid{
+    font-size: 5.3rem;
+}
+
+.fs-five{
+    font-size: 6rem;
+}
+

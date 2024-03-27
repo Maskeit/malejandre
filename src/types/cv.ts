@@ -23,6 +23,7 @@ export interface Basics {
   phone: string;
   url: string;
   summary: string;
+  blender:string;
   location: Location; // Aquí Location es un objeto, no un array
   profiles: Profile[]; // Aquí Profiles es un array de objetos Profile
 }
