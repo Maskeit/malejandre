@@ -4,3 +4,22 @@
     justify-content: center;
     align-items: center;
 }
+
+
+.render-desc{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: larger;    
+}
+
+@media (width < 700px) {
+    .render-desc{
+        flex-direction: column;
+    }
+    .render-desc > svg{
+        width: 50vw;
+    }
+}

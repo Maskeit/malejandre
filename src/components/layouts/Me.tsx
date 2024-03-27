@@ -55,7 +55,7 @@ export const Me = () => {
       </div>
 
         <div className="mb-3">
-          <TitlesH1 text="Talks and more" fontSize="fs-one-mid" vanished="vanished"/>
+          <TitlesH1 text="Talks and hobbies" fontSize="fs-one-mid" vanished="vanished"/>
         </div>
       <section className="hobbies">
         <MyHistoryCard src={charla2} text="I have given talks about artificial intelligence to young people interested in technology."/>

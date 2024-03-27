@@ -9,7 +9,8 @@
 .my-description{
     display: grid;
     gap: 1rem;
-    text-align: left;    
+    text-align: left;
+    font-size: larger;
 }
 .image-avatar{
     width: 100%;
