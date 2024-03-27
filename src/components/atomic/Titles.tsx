@@ -9,9 +9,9 @@ export const PrincipalTitles = ({title}) => {
   )
 }
 
-export const TitlesH1 = ({text}) => {
+export const TitlesH1 = ({text, fontSize, vanished}) => {
     return(
-      <span className='h1-title'>
+      <span className={`h1-title ${fontSize} ${vanished}`}>
         {text}
       </span>
     )

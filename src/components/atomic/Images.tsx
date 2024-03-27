@@ -1,8 +1,8 @@
 import React from 'react'
 import './styles/images.css'
-export const Thumbnail = ({ image }) => {
+export const Thumbnail = ({ image, width }) => {
     return (
-        <img src={image} alt="Imagen de perfil"/>
+        <img src={image} alt="Imagen de perfil" className={`thumbnail ${width}`}/>
     );
   };
 

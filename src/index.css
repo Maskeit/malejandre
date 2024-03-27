@@ -3,15 +3,17 @@
   /* line-height: 1.5;
   font-weight: 400; */
 
+  --main-bg-color: #0a2929;
+  --bg-image: url(./assets/renders/render_bg.webp);
   color-scheme: light dark;
   color: rgb(255, 255, 255);
   /* background-color: #ffffffe1; */
-  background-color: #0a2929;
+  background: var(--main-bg-color);
 
-  /* font-synthesis: none;
+  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 @tailwind base;
@@ -31,7 +33,7 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     color: #213547;
@@ -40,4 +42,4 @@ h1 {
   a:hover {
     color: #747bff;
   }
-}
+} */
