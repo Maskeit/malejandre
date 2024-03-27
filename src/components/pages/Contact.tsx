@@ -9,13 +9,11 @@ export const Contact = () => {
     <div className='contacto'>
         <div className='info'>
           <div className='title'>
-            <TitlesH1 text='Trabaja Conmigo!' />
-            <Parragraph text='Puedes contactarme enviandome un correo a miguelagustin182gmail.com o enviame un mensaje por LinkedIn' />
+            <TitlesH1 text='Let us work together!' fontSize='fs-two-mid'/>
+            <TitlesH1 text={`You can contact me by sending me an email to miguelagustin182@gmail.com or send me a message on LinkedIn.`} fontSize='fs-one'/>
           </div>
         </div>
-        <div>
-          <SocialLinks/>
-        </div>
+        <SocialLinks/>
     </div>
   )
 }
