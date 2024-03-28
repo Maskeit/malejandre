@@ -1,6 +1,7 @@
 import * as React from "react"
 const Linkedin = (props) => (
-  <svg viewBox="0 0 128 128" {...props}>
+  <svg viewBox="0 0 128 128"     width={100}
+  height={100}{...props}>
     <path
       fill="#0076b2"
       d="M116 3H12a8.91 8.91 0 0 0-9 8.8v104.42a8.91 8.91 0 0 0 9 8.78h104a8.93 8.93 0 0 0 9-8.81V11.77A8.93 8.93 0 0 0 116 3z"

@@ -1,6 +1,7 @@
 import * as React from "react"
 const Github = (props) => (
-  <svg viewBox="0 0 128 128" {...props}>
+  <svg viewBox="0 0 128 128"    width={100}
+  height={100} {...props}>
     <g fill="#fff">
       <path
         fillRule="evenodd"
