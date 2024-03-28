@@ -30,10 +30,14 @@ export const ScrollItem = () => {
   const handleScroll = () => {
     if (lineRef.current) {
       const windowHeight = window.innerHeight;
-      const scrolled = window.scrollY;
-      const newHeight = Math.max(100 - (scrolled / windowHeight) * 100, 0);
+      const fullHeight = document.body.scrollHeight;    
+      const scrolled = window.scrollY; // cantidad de scroll actual
+      // calcula el % de las paginas que ha sido desplazadas
+      const scrollPercentage = (scrolled / (fullHeight - windowHeight)) * 100;
 
-      lineRef.current.style.height = `${newHeight}px`;
+      const newHeight = Math.max(100 - scrollPercentage, 0);
+
+      lineRef.current.style.height = `${newHeight}%`;
       setIsVisible(newHeight > 0);
     }
   };

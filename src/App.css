@@ -10,7 +10,7 @@
 .btn-scroll{
   animation: show-scroll linear both;
   animation-timeline: scroll(root);
-  animation-range: 0 100px;
+  animation-range: 0 200px;
 }
 
 @keyframes show-scroll {
