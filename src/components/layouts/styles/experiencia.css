@@ -34,7 +34,6 @@
   font-size: 2rem;
 }
 
-
 .languages {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -44,6 +43,7 @@
   gap: 1rem;
   width: 80%;
   padding: 2rem;
+  width: 90%;
   border-radius: calc(var(--curve) * 1px);
   backdrop-filter: blur(10px);
   background-color: rgba(50, 72, 82, 0.719);
@@ -63,6 +63,19 @@
 .more > span{
   font-size: 2rem;
 }
+@media (width <= 700px) {
+  .technologies{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: center;
+  }
+  .languages{
+    background: #071b1bbd;
+    width: 100%;
+    margin-bottom: 2rem;    
+  }
+}
 @media (width <= 1050px)  {
   .experiencia-contenido {
     grid-template-columns: 1fr;
@@ -75,13 +88,10 @@
   }
 
   .technologies {
-    display: flex;
-    flex-direction: column-reverse;
+
+    grid-template-columns: 1fr 1fr;
     justify-content: stretch;
     align-items: center;
-  }
-  .languages{
-    background: transparent;
   }
 
   .conferencias {
@@ -104,9 +114,23 @@
   }
 }
 
+.reveal-object{
+  animation: reveal-on 0.4s linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 20%;
+}
+
+@keyframes reveal-on {
+  0%{
+    opacity: 0;
+    transform: translateY(130px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
   /* border: 1px solid red; */
   /* background-image: url(../../../assets/NN.webp);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; */
+  */

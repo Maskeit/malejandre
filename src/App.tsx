@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import {Sidebar} from './components/organismic/Sidebar';
 import { MainPage } from './components/pages/MainPage'
-import { Projects } from './components/pages/Projects'
+import { Proyectos } from './components/pages/Projects'
 import { About } from './components/pages/About'
 import { Contact } from './components/pages/Contact';
 import { SidebarBtn } from './components/atomic/Buttons';
@@ -21,8 +21,8 @@ export const App = () =>{
       <Sidebar isActive={isActive} toggleSidebar={toggleSidebar}/>
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/Projects" element={<Projects />}/>
         <Route path="/About" element={<About />}/>
+        <Route path="/Projects" element={<Proyectos />}/>
         <Route path="/Contact" element={<Contact />}/>
       </Routes>
       <div className='btn-scroll'>

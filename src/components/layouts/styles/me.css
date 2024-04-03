@@ -5,12 +5,12 @@
     box-sizing: border-box;
     gap: 2rem;
     margin-bottom: 32px;
+    /* height: 80vh; */
 }
 .my-description{
     display: grid;
-    gap: 1rem;
     text-align: left;
-    font-size: larger;
+    gap: 16px;
 }
 .image-avatar{
     width: 100%;
@@ -27,13 +27,16 @@
     width: 100%;
     height: auto;
     border: none;
+    filter:  grayscale(90%);
+    transition: filter 0.5s ease-in-out;
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 15%  cover 25%;
 }
 
 .hobbies > .image-container:hover{
-    cursor: pointer;
+    cursor: pointer;    
+    filter:  grayscale(0%);
 }
 @media(width < 700px) {
     .me{

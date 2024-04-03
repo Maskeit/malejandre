@@ -8,7 +8,10 @@
   cursor: pointer;
 }
 
-
+.social-icon:hover{
+  background: #cccccc79;
+  transition: 0.3s ease-in;
+}
 /* LanguageIcon component */
 .language-icon{
   width: 100%;

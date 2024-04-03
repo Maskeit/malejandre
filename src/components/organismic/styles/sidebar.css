@@ -9,17 +9,15 @@
     top: 0;
     left: -100%;
     z-index: 100;
-    animation-fill-mode: forwards;    
+    transition:left 0.4s ease-in-out;    
 }
 
 .sidebar.active {
     left: 0;
-    animation: sidebarIn 0.3s ease-in-out forwards;
-    min-width: 25vw;
+    /* animation: sidebarIn 0.3s ease-in-out forwards;
+    min-width: 25vw; */
 }
-.sidebar.inactive {
-    animation: sidebarOut 0.3s ease-in-out forwards;
-  }
+
   
   @keyframes sidebarIn {
     from {
