@@ -1,0 +1,11 @@
+.project-content{
+    border-radius: 16px;
+    box-sizing: border-box;
+    transition: 0.6s ease;
+}
+
+.project-content:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+

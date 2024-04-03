@@ -2,12 +2,12 @@ import React from 'react'
 import { Work } from '../../types/cv';
 import './styles/experienciaCard.css'
 
-// Utiliza la interfaz definida para tipar las props de tu componente
+// Utiliza la interfaz definida para tipar las props del componente
 export const ExperienciaCard = ({ name, startDate, endDate, position, summary, highlights,thumb,logo }: Work) => {
 
   return (
     <div className="card">
-      <img src={thumb} className="card-image" alt="" />
+      <img src={`${thumb}`} className="card-image" alt="" />
 
       <div className="card-overlay ">
         

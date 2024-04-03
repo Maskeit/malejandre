@@ -7,7 +7,7 @@ import './styles/sidebar.css'
 export const Sidebar = ({ isActive, toggleSidebar}) => {
 
   const currentPath = window.location.pathname;
-  const sidebarClass = `sidebar ${isActive ? 'active' : 'inactive'}`;
+  const sidebarClass = `sidebar ${isActive ? 'active' : ''}`;
   return (
     <aside className={sidebarClass}>
       <nav className='sidebar-nav'>

@@ -39,7 +39,10 @@ export interface Work {
   thumb:string;
   logo:string;
 }
-
+export interface Volunter{
+  altSummary: string;
+  educationSummary: string;
+}
 export interface Education{
   institution:string;
   url:string;
@@ -69,4 +72,6 @@ export interface Projects{
   description:string;
   highlights:string[];
   url:string;
+  src: string;
+  thumb:string;
 }

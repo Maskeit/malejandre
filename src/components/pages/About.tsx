@@ -3,14 +3,16 @@ import { Basics } from "../../types/cv";
 import cv from "../../../cv.json";
 import { Me } from "../layouts/Me";
 import { Renders } from "../layouts/Renders";
-import { Parragraph, TitlesH1 } from "../atomic/Titles";
+import { Parragraph, Titles } from "../atomic/Titles";
+import { Education } from "../layouts/Education";
 import "./styles/About.css";
 export const About = () => {
   const blenderMode = cv.basics.blender;
   return (
     <div className="about">
-      <TitlesH1 text="About me" fontSize="fs-two-mid" vanished="vanished" />
+      <Titles text="About me" fontSize="fs-two-mid" animation="vanished" color="main-color"/>
       <Me />
+      <Education/>
       <Renders />
       <div className="render-desc">
 
@@ -24,7 +26,7 @@ export const About = () => {
             fill="#e87500"
           ></path>
         </svg>
-        <Parragraph text={blenderMode} />
+        <Parragraph text={blenderMode} animation="vanished" color="main-color"fontSize=""/>
       </div>
     </div>
   );

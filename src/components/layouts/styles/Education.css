@@ -1,0 +1,17 @@
+.education{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    gap: 1.5rem;
+}
+.education-info{
+    display: flex;
+    flex-direction: column;
+}
+
+@media( width < 900px ) {
+    .education{
+        flex-direction: column;
+    }
+}

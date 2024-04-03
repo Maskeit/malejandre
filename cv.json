@@ -40,9 +40,9 @@
       "url": "https://cisnaturatienda.com.mx",
       "startDate": "2023-08-01",
       "endDate": "2024-01-30",
-      "summary": "Actualmente me encuentro en el desarrollo de un Ecommerce para la venta de productos naturistas y remedios herbolarios implementando pasarelas de pago.",
+      "summary": "I am currently developing an Ecommerce for the sale of naturopathic products and herbal remedies implementing payment gateways.",
       "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
-      "thumb": "./src/assets/cisnatura_02.webp",
+      "thumb": "./src/assets/projects/cisnatura_02.webp",
       "logo": "./src/assets/logo/cisnatura.svg"
     },
     {
@@ -51,9 +51,9 @@
       "url": "https://cisnaturatienda.com.mx",
       "startDate": "2023-08-01",
       "endDate": "2023-12-01",
-      "summary": "Colaboré en el desarrollo de una aplicación movil para fomentar el comercio local.",
+      "summary": "I collaborated in the development of a mobile application to promote local commerce.",
       "highlights": ["Java y XML Material Design 3"],
-      "thumb": "./src/assets/localito_01.webp",
+      "thumb": "./src/assets/projects/localito_01.webp",
       "logo": "./src/assets/logo/localito.svg"
     },
     {
@@ -62,23 +62,16 @@
       "url": "https://cisnaturatienda.com.mx",
       "startDate": "2023-02-01",
       "endDate": "2023-06-01",
-      "summary": "Utilizando tecnicas de ML, desarrollé un modelo para la deteccion de personas implementada en una Raspberry Pi.",
+      "summary": "Using ML techniques, I developed a model for people detection implemented on a Raspberry Pi.",
       "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
-      "thumb": "./src/assets/NN.webp",
+      "thumb": "./src/assets/projects/NN.webp",
       "logo": "./src/assets/logo/smartcrowd.svg"
     }
   ],
-  "volunteer": [
-    {
-      "organization": "",
-      "position": "",
-      "url": "",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
-    }
-  ],
+  "volunter": {    
+    "altSummary": "As a software engineer, these are some technologies that I use to carry out my software development projects such as Machine Learning, mobile and web applications, interface design and database administration.",
+    "educationSummary" : "I have spent part of my life preparing professionally, from high school to university, it has been the same institution, the University of Colima and there I attended technical high school in accounting and then university, in a degree in Software Engineering."
+  },
   "education": [
     {
       "institution": "Universidad de Colima",
@@ -232,20 +225,24 @@
   ],
   "projects": [
     {
-      "name": "CISnatura",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Ecommerce de productos naturistas y remedios herbolarios.",
-      "highlights": ["Desarrollo web"],
-      "url": "#"
-    },
-    {
       "name": "Localito",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
       "description": "Aplicación de comercio local para dispositivos móviles android",
       "highlights": ["Android Studio","API"],
-      "url": "https://github.com/PI5-Localito/Localito-Android"
+      "url": "https://github.com/PI5-Localito/Localito-Android",
+      "src": "",
+      "thumb": "./src/assets/projects/localito_01.webp"
+    },
+    {
+      "name": "CISnatura",
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "description": "Ecommerce de productos naturistas y remedios herbolarios.",
+      "highlights": ["Desarrollo web"],
+      "url": "#",
+      "src": "",
+      "thumb": "./src/assets/projects/cisnatura_01.webp"
     },
     {
       "name": "SmartCrowd",
@@ -253,7 +250,9 @@
       "endDate": "2021-01-01",
       "description": "Software de reconocimiento de imagenes para el control del aforo, montado en una raspberry",
       "highlights": ["OpenCV","IA","Raspberry Pi", "Azure"],
-      "url": "https://github.com/Maskeit/proyecto-integrador-4"
+      "url": "https://github.com/Maskeit/proyecto-integrador-4",
+      "src": "",
+      "thumb": "./src/assets/projects/NN.webp"
     },
     {
       "name": "BlasterBlog",
@@ -261,7 +260,9 @@
       "endDate": "2021-01-01",
       "description": "Blog de arte y diseño 3D para creadores, artistas y aficionados del sofware de modelado en 3D",
       "highlights": ["Blender","Desarrollo web"],
-      "url": "https://github.com/Maskeit/blasterblog.site"
+      "url": "https://github.com/Maskeit/blasterblog.site",
+      "src": "",
+      "thumb": "./src/assets/projects/cisnatura_01.webp"
     }
   ]
 }
