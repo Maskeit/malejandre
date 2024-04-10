@@ -13,7 +13,6 @@ export const About = () => {
       <Titles text="About me" fontSize="fs-two-mid" animation="vanished" color="main-color"/>
       <Me />
       <Education/>
-      <Renders />
       <div className="render-desc">
 
         <svg viewBox="0 0 128 128">
@@ -28,6 +27,8 @@ export const About = () => {
         </svg>
         <Parragraph text={blenderMode} animation="vanished" color="main-color"fontSize=""/>
       </div>
+      <Renders />
+
     </div>
   );
 };

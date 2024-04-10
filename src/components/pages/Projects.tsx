@@ -3,7 +3,7 @@ import cv from '../../../cv.json'
 import { Titles } from '../atomic/Titles';
 import { Project } from '../layouts/Project';
 import { Pointer, Blend} from 'lucide-react';
-
+import { ContactButton } from '../atomic/Buttons';
 
 export const Proyectos = () => {
   return (
@@ -27,6 +27,10 @@ export const Proyectos = () => {
               ))
           }          
       </div>
+      <div className='btn-container'>
+        <a href="/contact" className='project-btn-contact'>Contact me!</a>
+      </div>
+
     </div>
   );
 };
