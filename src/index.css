@@ -4,6 +4,7 @@
   font-weight: 400; */
 
   --main-bg-color: #0a2929;
+  --light-bg-color: #fff;
   --bg-image: url(./assets/renders/render_bg.webp);
   color-scheme: light dark;
   color: rgb(255, 255, 255);

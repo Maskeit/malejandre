@@ -255,14 +255,34 @@
       "thumb": "./src/assets/projects/NN.webp"
     },
     {
+      "name": "Unibank",
+      "startDate": "2022-08-015",
+      "endDate": "2022-11-01",
+      "description": "Aplicacion web para un servicio de finanzas para universitarios.",
+      "highlights": ["PHP","PHP, JavaScript, HTML, CSS, Bootstrap"],
+      "url": "https://github.com/Maskeit/",
+      "src": "",
+      "thumb": "./src/assets/projects/unibank.webp"
+    },
+    {
       "name": "BlasterBlog",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Blog de arte y diseño 3D para creadores, artistas y aficionados del sofware de modelado en 3D",
+      "description": "Blog de arte y diseño  para creadores, artistas y aficionados del sofware de modelado en 3D",
       "highlights": ["Blender","Desarrollo web"],
       "url": "https://github.com/Maskeit/blasterblog.site",
       "src": "",
-      "thumb": "./src/assets/projects/cisnatura_01.webp"
+      "thumb": "./src/assets/projects/blasterblog.webp"
+    },
+    {
+      "name": "Image Resizer",
+      "startDate": "2024-01-13",
+      "endDate": "2024-01-14",
+      "description": "App to resize any type of image",
+      "highlights": ["Electron","PHP, JavaScript, HTML, CSS"],
+      "url": "https://github.com/Maskeit/",
+      "src": "",
+      "thumb": "./src/assets/projects/resizer.webp"
     }
   ]
 }
