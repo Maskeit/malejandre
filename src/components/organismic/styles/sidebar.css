@@ -48,8 +48,14 @@
 }
 .headbar{
     display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.close-btn{
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 .navbar-list{
     display: flex;

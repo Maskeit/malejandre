@@ -2,6 +2,7 @@ import React, {  useState,useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Logo } from '../atomic/Images'
 import logoCodeale from '../../assets/Miguedev/6.svg'
+import logoLetras from '../../assets/logo/codeale1.svg'
 import { SocialLinks } from '../molecular/SocialLinks'
 import './styles/sidebar.css'
 export const Sidebar = ({ isActive, toggleSidebar}) => {
@@ -13,13 +14,12 @@ export const Sidebar = ({ isActive, toggleSidebar}) => {
       <nav className='sidebar-nav'>
         <div>        
           <div className='headbar'>
-            <Logo logo={logoCodeale} width="four"/>
-            <button onClick={toggleSidebar} className='p-1.5 rounded-lg'>
+            <Logo logo={logoLetras} width="four"/>
+            <button onClick={toggleSidebar} className='p-1.5 rounded-lg close-btn'>
               <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" 
                   stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-x">
               <path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
             </button>
-
           </div>
 
           <div className={`navbar-list ${isActive ? 'active' : ''}`}>
