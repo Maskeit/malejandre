@@ -40,6 +40,18 @@ export const LanguageIcon = ({ name }: Skills) => {
   return <Icon className="language-icon" />;
 };
 
+
+
+
+export const IconLanguage = ({ name }) =>{
+  return(
+    <img className="language-icon" src={`/icons/${name}.tsx`} alt={name}/>
+  );
+};
+
+
+
+
 export const SocialIcon = ({ network, url }: Profile) => {
   const IconComponent = ICONS[network];
   if (!IconComponent) {
