@@ -3,7 +3,6 @@ import cv from '../../../cv.json'
 import { Titles } from '../atomic/Titles';
 import { Project } from '../layouts/Project';
 import { Pointer, Blend} from 'lucide-react';
-import { ContactButton } from '../atomic/Buttons';
 
 export const Proyectos = () => {
   return (

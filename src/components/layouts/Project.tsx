@@ -1,11 +1,11 @@
 import './styles/Project.css'
-import { Image, Thumbnail } from '../atomic/Images'
+import { Image } from '../atomic/Images'
 import { Parragraph, Titles } from '../atomic/Titles';
 import { Projects } from '../../types/cv';
 import { useState } from 'react';
 
 
-export const Project = ({name, description, url, src, thumb } : Projects) => {
+export const Project = ({name, description, thumb } : Projects) => {
   const [isTouched, setIsTouched] = useState(false);
 
   const handleTouch = () => {

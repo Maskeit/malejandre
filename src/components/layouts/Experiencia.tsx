@@ -1,12 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import cv from "../../../cv.json";
-import { Titles,PrincipalTitles, Parragraph } from "../atomic/Titles";
+import { Titles, Parragraph } from "../atomic/Titles";
 import { ExperienciaCard } from "../molecular/ExperienciaCard";
-import { Work, Skills, Volunter } from "../../types/cv";
+import { Work, Skills} from "../../types/cv";
 import { LanguageIcon } from "../atomic/Icons";
-import { Image } from "../atomic/Images";
 
-import conf from "../../assets/conf1.webp";
 import "./styles/experiencia.css";
 
 const langDesc = cv.volunter.altSummary;
