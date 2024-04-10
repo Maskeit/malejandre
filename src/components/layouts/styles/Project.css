@@ -1,11 +1,46 @@
 .project-content{
-    border-radius: 16px;
+    border-radius: 25px;
     box-sizing: border-box;
     transition: 0.6s ease;
+    overflow: hidden;
+    position: relative;
 }
 
 .project-content:hover{
-    opacity: 0.5;
     cursor: pointer;
+}
+
+.project-description{
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding: 0.8rem;    
+    font-size: 2rem;
+    gap: 18px;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    opacity: 0;
+    background-color: rgba(76, 83, 87, 0.781);
+    color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.project-content:hover
+.project-description{
+    opacity: 1;
+}
+.project-content.touched .project-description {
+    opacity: 1;
+}
+
+@media (width < 1000px ) {
+    .project-description{
+        font-size: 1.2em;
+    }
 }
 
