@@ -42,7 +42,7 @@
         transform: scale(0.5) rotateY(90deg);
       }
       50% {
-        transfrom: rotate(180deg);
+        transform: rotate(180deg);
       }
       75% {
         transform: rotateX(270deg);
