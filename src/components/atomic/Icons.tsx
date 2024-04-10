@@ -20,7 +20,7 @@ export const LanguageIcon = ({ name }: Skills) => {
     // Importación dinámica basada en la prop 'name'
     const importIcon = async () => {
       try {
-        const { default: ImportedIcon } = await import(`../../icons/${name}`);
+        const { default: ImportedIcon } = await import(`../../icons/${name}.tsx`);
         setIcon(() => ImportedIcon); // Actualizar el estado con el componente importado
       } catch (err) {
         console.error(`No se pudo importar el icono: ${name}`, err);
