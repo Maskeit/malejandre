@@ -43,7 +43,7 @@
       "summary": "I am currently developing an Ecommerce for the sale of naturopathic products and herbal remedies implementing payment gateways.",
       "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
       "thumb": "./src/assets/cisnatura_02.webp",
-      "logo": "./src/assets/logo/cisnatura.svg"
+      "logo": "/logo/cisnatura.svg"
     },
     {
       "name": "Localito",
@@ -54,7 +54,7 @@
       "summary": "I collaborated in the development of a mobile application to promote local commerce.",
       "highlights": ["Java y XML Material Design 3"],
       "thumb": "./src/assets/localito_01.webp",
-      "logo": "./src/assets/logo/localito.svg"
+      "logo": "/logo/localito.svg"
     },
     {
       "name": "SmartCrowd",
@@ -65,7 +65,7 @@
       "summary": "Using ML techniques, I developed a model for people detection implemented on a Raspberry Pi.",
       "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
       "thumb": "./src/assets/NN.webp",
-      "logo": "./src/assets/logo/smartcrowd.svg"
+      "logo": "/logo/smartcrowd.svg"
     }
   ],
   "volunter": {    

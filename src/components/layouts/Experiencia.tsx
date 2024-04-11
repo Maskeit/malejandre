@@ -2,11 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 import cv from "../../../cv.json";
 import { Titles, Parragraph } from "../atomic/Titles";
 import { ExperienciaCard } from "../molecular/ExperienciaCard";
+
+
 import { Work, Skills} from "../../types/cv";
-import { LanguageIcon, IconLanguage } from "../atomic/Icons";
+import { LanguageIcon } from "../atomic/Icons";
 
 import "./styles/experiencia.css";
-import Github from '../../icons/Github';
 
 const langDesc = cv.volunter.altSummary;
 export const Experiencia = () => {
@@ -36,7 +37,7 @@ export const Experiencia = () => {
     };
   },[hasAnimated])
 
-  return (
+    return (
     <div className="experiencia">
       <div className="experiencia-contenido">
       <Titles
@@ -49,7 +50,8 @@ export const Experiencia = () => {
         <div className={`cards-section ${hasAnimated ? 'reveal-object' : ''}`}>
           {cv.work.map((expItem: Work, index) => (
             <ExperienciaCard key={index} {...expItem} />
-          ))}
+          ))}          
+          
         </div>
 
         <div className="technologies">
@@ -60,13 +62,13 @@ export const Experiencia = () => {
             color='main-color'
           />
           <div className="languages">
-            {/* {cv.skills.map((iconItem: Skills, index) => (
+            {cv.skills.map((iconItem: Skills, index) => (
               <LanguageIcon key={index} {...iconItem} />
-            ))} */}
+            ))}
+            {/* <IconLanguage name='Github'/>
             <IconLanguage name='Github'/>
             <IconLanguage name='Github'/>
-            <IconLanguage name='Github'/>
-            <IconLanguage name='Github'/>
+            <IconLanguage name='Github'/> */}
             
           </div>
         </div>

@@ -1,8 +1,8 @@
 import React, {  useState,useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Logo } from '../atomic/Images'
-import logoCodeale from '../../assets/Miguedev/6.svg'
-import logoLetras from '../../assets/logo/codeale1.svg'
+// import logoCodeale from '../../assets/Miguedev/6.svg'
+import logoLetras from '/logo/codeale1.svg'
 import { SocialLinks } from '../molecular/SocialLinks'
 import './styles/sidebar.css'
 export const Sidebar = ({ isActive, toggleSidebar}) => {
