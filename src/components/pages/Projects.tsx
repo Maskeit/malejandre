@@ -27,7 +27,7 @@ export const Proyectos = () => {
           }          
       </div>
       <div className='btn-container'>
-        <a href="/contact" className='project-btn-contact'>Contact me!</a>
+        <a href="../Contact" className='project-btn-contact'>Contact me!</a>
       </div>
 
     </div>
