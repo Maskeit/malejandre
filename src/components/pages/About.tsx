@@ -24,8 +24,8 @@ export const About = () => {
         </svg>
         <Parragraph text={blenderMode} animation="vanished" color="main-color"fontSize=""/>
       </div>
+      <Titles text="Some of my render work" fontSize="fs-two-mid" animation="vanished" color="main-color"/>
       <Renders />
-
     </div>
   );
 };

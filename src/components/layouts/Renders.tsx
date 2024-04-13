@@ -1,6 +1,5 @@
 import { Render } from "../molecular/Render";
 import { Parragraph, Titles } from "../atomic/Titles";
-import {ContactMe} from "../atomic/Buttons";
 import "./styles/renders.css";
 import render1 from "../../assets/renders/Render1.webp";
 import render2 from "../../assets/renders/Render2.webp";
@@ -12,9 +11,6 @@ import render6 from "../../assets/renders/Render6.webp";
 export const Renders = () => {
   return (
     <section className="renders">
-        <div className="renders-title">
-            <Titles text="Some of my render work" fontSize="fs-one-mid" animation="vanished" color="main-color"/>
-        </div>
       <div>
         <Render src={render2}  />
         <Render src={render1} />
@@ -23,8 +19,7 @@ export const Renders = () => {
         <Render src={render5}  />
         <Render src={render6}  />
       </div>
-      <Parragraph text="More renders coming soon..." color="main-color"/>
-      <ContactMe/>
+      <Parragraph text="More renders coming soon..." color="main-color" fontSize="fs-cero"/>
     </section>
   );
 };

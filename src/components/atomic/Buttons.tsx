@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
+import { SquareChevronUp } from 'lucide-react';
 import './styles/buttons.css'
 export const Buttons = () => {
   return (
@@ -18,7 +19,7 @@ export const BackScroll = () => {
   }
 
   return(   
-      <p className='smooth-back'  onClick={scrollToTop} > VOLVER</p>
+      <p className='smooth-back'  onClick={scrollToTop} > BACK</p>
   )
 }
 
@@ -52,10 +53,11 @@ export const ScrollItem = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, []);  
+
   return (
     <div className="scroll-indicator" onClick={scrollToTop} style={{ cursor: isVisible ? 'default' : 'pointer' }}>
-      <p>{isVisible ? 'SCROLL' : 'VOLVER'}</p>
+      <p>{isVisible ? 'SCROLL' :<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-arrow-big-up-dash"><path d="M9 19h6"/><path d="M9 15v-3H5l7-7 7 7h-4v3H9z"/></svg>}</p>
       <div className="line" ref={lineRef}></div>
     </div>
   );

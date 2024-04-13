@@ -89,7 +89,7 @@
     backdrop-filter: blur(12px);
     background-color: rgb(139, 160, 170);
     transition: all 0.3s ease;
-    color: black;
+
 }
 .navbar-button.active{
     backdrop-filter: blur(12px);

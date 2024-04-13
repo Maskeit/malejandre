@@ -1,9 +1,4 @@
 .renders{
     perspective: 1000px;
-}
-
-.renders-title {
-    position: sticky;
-    top: 0; /* Ajusta este valor según necesites */
-    z-index: 10; /* Asegúrate de que el título se sitúe sobre las otras tarjetas */    
+    padding-bottom: 7rem;
 }
