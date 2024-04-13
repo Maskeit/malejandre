@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import './styles/buttons.css'
 export const Buttons = () => {
   return (
@@ -59,7 +60,15 @@ export const ScrollItem = () => {
     </div>
   );
 };
+export const ToTop = () => {
+  const { pathname } = useLocation();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 export const ContactButton = ({ btntext, bgColor }) => {
   return (
     <button className={`contact-btn ${bgColor}`}>
@@ -77,3 +86,11 @@ export const SidebarBtn = ({ toggleSidebar, isActive }) => {
     </button>
   );
 };
+
+export const ContactMe = () =>{
+  return(
+    <div className='btn-container'>
+      <a href="../Contact" className='btn-contact'>Contact me!</a>
+    </div>
+  )
+}

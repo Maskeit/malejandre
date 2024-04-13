@@ -64,12 +64,7 @@ export const Experiencia = () => {
           <div className="languages">
             {cv.skills.map((iconItem: Skills, index) => (
               <LanguageIcon key={index} {...iconItem} />
-            ))}
-            {/* <IconLanguage name='Github'/>
-            <IconLanguage name='Github'/>
-            <IconLanguage name='Github'/>
-            <IconLanguage name='Github'/> */}
-            
+            ))}            
           </div>
         </div>
       </div>

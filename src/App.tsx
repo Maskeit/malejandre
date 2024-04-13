@@ -7,7 +7,7 @@ import { Proyectos } from './components/pages/Projects'
 import { About } from './components/pages/About'
 import { Contact } from './components/pages/Contact';
 import { SidebarBtn } from './components/atomic/Buttons';
-import { ScrollItem } from './components/atomic/Buttons'
+import { ScrollItem, ToTop } from './components/atomic/Buttons'
 
 export const App = () =>{
   const [isActive, setIsActive] = useState(false);
@@ -19,6 +19,7 @@ export const App = () =>{
     <>
       <SidebarBtn toggleSidebar={toggleSidebar} isActive={isActive}/>
       <Sidebar isActive={isActive} toggleSidebar={toggleSidebar}/>
+      <ToTop/>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/About" element={<About />}/>

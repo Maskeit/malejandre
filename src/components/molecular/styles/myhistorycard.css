@@ -1,6 +1,8 @@
 .image-container{
     position: relative;
     display: inline-block;
+    width: 100%;
+    height: auto;
 }
 
 .text-overlay{
@@ -15,8 +17,6 @@
     color: white;
     backdrop-filter: blur(5px);
     background-color: rgba(50, 72, 82, 0.719);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 @media(width < 900px) {
@@ -24,3 +24,26 @@
     font-size: 1rem;
    } 
 }
+
+.img-skeleton{
+    background: rgb(131, 131, 131);
+    width: 100%; /* Asegúrate de que coincida con el tamaño de tu imagen */
+    height: 400px; /* O la altura que desees para tu skeleton */
+    border-radius: 8px;
+}
+
+.card-image-history {
+    display: block; /* Esto asegura que la imagen no tenga espacio extra debajo de ella */
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0; /* Inicialmente oculto */
+  }
+
+  .card-image-history.visible {
+    opacity: 1; /* Hacer la imagen visible cuando esté cargada */
+  }
+  
+  .hidden {
+    display: none; /* Ocultar la imagen cuando no esté cargada */
+  }

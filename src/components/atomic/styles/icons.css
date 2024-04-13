@@ -17,11 +17,12 @@
   width: 100%;
   height: auto;
   object-fit: contain;
-  transition: transform 3s ease-in-out;
+  transition: transform 6s linear;
+  
 }
 
 .language-icon:hover{
   filter: drop-shadow(0 0 0.75rem rgb(107, 107, 107));
   cursor: pointer;
-  transform: rotate(60deg); 
+  transform: rotate(360deg); 
 }

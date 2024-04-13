@@ -1,4 +1,3 @@
-import React from 'react'
 import { Thumbnail } from '../atomic/Images';
 import { PrincipalTitles } from '../atomic/Titles';
 import logo from '../../assets/Miguedev/2.svg'
@@ -11,7 +10,7 @@ export const Hero = () => {
             <PrincipalTitles title="Hi everyone! My name is Miguel. I'm a Software Engineer, from México and welcome to Codeale." animation='vanished' fontSize='' color='main-color'/>
         </div>
         <div className="thumbnail-container">
-          <Thumbnail image={logo} animation='revelacion' />
+          <Thumbnail image={logo} animation='revelacion' width=''  addClass='transform-position'/>
         </div>
   </div>
 

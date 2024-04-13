@@ -63,6 +63,11 @@
     animation: reveal  1.4s ease-out 0s 1;
 }
 
+.transform-position{
+    animation: transform-position  1.8s ease-in-out 0s 1;
+}
+
+
 /* Animations */
 
 @keyframes reveal {
@@ -73,6 +78,16 @@
         opacity: 1;
     }   
 }
+
+@keyframes transform-position {
+    0%{
+        transform: translateY(400px);
+    }
+    100%{
+        transform: translateY(0);
+    }   
+}
+
 
 .redShadow{
     box-shadow: 10px 5px 5px red;
