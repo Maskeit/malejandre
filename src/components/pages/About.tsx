@@ -1,5 +1,3 @@
-import React from "react";
-import { Basics } from "../../types/cv";
 import cv from "../../../cv.json";
 import { Me } from "../layouts/Me";
 import { Renders } from "../layouts/Renders";
@@ -14,7 +12,6 @@ export const About = () => {
       <Me />
       <Education/>
       <div className="render-desc">
-
         <svg viewBox="0 0 128 128">
           <path
             d="M66.332 70.032c.24-4.242 2.327-7.987 5.485-10.634 3.094-2.602 7.248-4.193 11.809-4.193 4.537 0 8.69 1.59 11.78 4.193 3.163 2.647 5.237 6.392 5.485 10.634.24 4.35-1.523 8.41-4.605 11.417-3.158 3.05-7.627 4.977-12.66 4.977-5.037 0-9.526-1.915-12.664-4.977-3.094-3.006-4.853-7.044-4.606-11.397zm0 0"

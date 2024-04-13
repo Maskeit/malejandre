@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 import { Work } from '../../types/cv';
 import './styles/experienciaCard.css'
 
 // Utiliza la interfaz definida para tipar las props del componente
 export const ExperienciaCard = ({ name, startDate, endDate, position, summary, highlights,thumb,logo }: Work) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <div className="card">
-      <img src={`${thumb}`} className="card-image" alt="" />
+      {!imageLoaded && <div className="card-skeleton"></div>}
+
+      <img src={`${thumb}`}  
+      className={`card-image ${imageLoaded ? 'visible' : 'hidden'}`}
+      alt="" 
+      onLoad={()=> setImageLoaded(true)}/>
 
       <div className="card-overlay ">
         
