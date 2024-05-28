@@ -35,6 +35,17 @@
   },
   "work": [
     {
+      "name": "Proplayas",
+      "position": "Full Stack Engineer",
+      "url": "https://proplayas.org",
+      "startDate": "2024-02-01",
+      "endDate": "2024-06-01",
+      "summary": "I am currently work with team in develop for a site of care of beaches around the world.",
+      "highlights": ["Next js, React js, Drupal"],
+      "thumb": "/projects/proplayas.png",
+      "logo": "/logo/proplayas_logo.svg"
+    },
+    {
       "name": "CISnatura",
       "position": "Full Stack Engineer",
       "url": "https://cisnaturatienda.com.mx",
