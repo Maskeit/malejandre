@@ -8,7 +8,7 @@ import charla2 from '../../assets/images/conf1.webp'
 
 import { MyHistoryCard } from "../molecular/MyHistoryCard";
 
-import avatar from "../../assets/images/miguel_04.png";
+import avatar from "../../assets/images/miguel_04.svg";
 
 import "./styles/me.css";
 export const Me = () => {
