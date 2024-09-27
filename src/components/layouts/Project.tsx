@@ -5,11 +5,14 @@ import { Projects } from '../../types/cv';
 import { useState } from 'react';
 
 
-export const Project = ({name, description, thumb } : Projects) => {
+export const Project = ({name, description, thumb, url } : Projects) => {
   const [isTouched, setIsTouched] = useState(false);
 
-  const handleTouch = () => {
-    setIsTouched(!isTouched); // Cambia el estado a cada clic/touch
+  const handleTouch = (e: React.MouseEvent) => {
+    // Evita que el click en el enlace afecte al contenedor
+    if ((e.target as HTMLElement).tagName !== 'A') {
+      setIsTouched(!isTouched); // Cambia el estado solo si no es un enlace
+    }
   };
   return (
     <div 
@@ -25,8 +28,9 @@ export const Project = ({name, description, thumb } : Projects) => {
           <Parragraph text={description} color='' animation='' fontSize=''/>
       </div>
     </div>
-    <Image src={thumb} addClass=""/>
-
+    <a href={url} target="_blank" rel="noopener noreferrer">
+      <Image src={thumb} addClass=""/>
+    </a>
   </div>
 
   )

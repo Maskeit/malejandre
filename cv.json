@@ -53,8 +53,8 @@
       "endDate": "2024-01-30",
       "summary": "I am currently developing an Ecommerce for the sale of naturopathic products and herbal remedies implementing payment gateways.",
       "highlights": ["PHP, JavaScript, HTML, CSS, Bootstrap"],
-      "thumb": "/projects/cisnatura_01.webp",
-      "logo": "/logo/cisnatura.svg"
+      "thumb": "/projects/cisnaturaTienda.webp",
+      "logo": "/logo/logocis.svg"
     },
     {
       "name": "Localito",
@@ -246,14 +246,14 @@
       "thumb": "/projects/localito_01.webp"
     },
     {
-      "name": "CISnatura",
+      "name": "CISnatura Tienda",
       "startDate": "2019-01-01",
       "endDate": "2021-01-01",
-      "description": "Ecommerce of naturopathic products and herbal remedies.",
+      "description": "E-commerce of herbal remedies and alternative health solutions.",
       "highlights": ["Desarrollo web"],
-      "url": "#",
+      "url": "https://cisnaturatienda.com/home",
       "src": "",
-      "thumb": "/projects/cisnatura_01.webp"
+      "thumb": "/projects/cisnaturaTienda.webp"
     },
     {
       "name": "SmartCrowd",
