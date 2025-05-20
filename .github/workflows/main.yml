@@ -28,8 +28,8 @@ jobs:
     - name: Upload to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: 157.173.208.97       # ← Cambia por tu dominio o IP de Hostinger
+        server: 157.173.208.97
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/       # ← Cambia si vas a otro subdominio o carpeta
-        local-dir: ./build
+        server-dir: /public_html/
+        local-dir: ./build/
