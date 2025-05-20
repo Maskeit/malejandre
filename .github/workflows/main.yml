@@ -31,7 +31,7 @@ jobs:
         server: 157.173.208.97
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: /public_html/
+        server-dir: /
         local-dir: ./dist/
     - name: Verificar contenido de dist
       run: ls -la ./dist/
