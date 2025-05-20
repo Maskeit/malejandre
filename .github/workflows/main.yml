@@ -25,11 +25,13 @@ jobs:
     - name: Build React app
       run: npm run build
 
-    - name: Upload to Hostinger via FTP
+    - name: Deploy to Hostinger
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: 157.173.208.97
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/
-        local-dir: ./build/
+        local-dir: ./dist/
+    - name: Verificar contenido de dist
+      run: ls -la ./dist/
