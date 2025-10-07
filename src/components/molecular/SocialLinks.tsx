@@ -1,6 +1,6 @@
 import React from 'react';
 import cv from "../../../cv.json";
-import { SocialIcon } from '../atomic/Icons';
+import { SocialIcon } from '@/components/atomic/Icons';
 import './styles/sociallinks.css';
 export const SocialLinks = () => {
   return (

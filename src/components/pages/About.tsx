@@ -1,8 +1,8 @@
 import cv from "../../../cv.json";
-import { Me } from "../layouts/Me";
-import { Renders } from "../layouts/Renders";
-import { Parragraph, Titles } from "../atomic/Titles";
-import { Education } from "../layouts/Education";
+import { Me } from "@/components/layouts/Me";
+import { Renders } from "@/components/layouts/Renders";
+import { Parragraph, Titles } from "@/components/atomic/Titles";
+import { Education } from "@/components/layouts/Education";
 import "./styles/About.css";
 export const About = () => {
   const blenderMode = cv.basics.blender;

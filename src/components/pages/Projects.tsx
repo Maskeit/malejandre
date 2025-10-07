@@ -1,9 +1,9 @@
 import './styles/Projects.css'
 import cv from '../../../cv.json'
-import { Titles } from '../atomic/Titles';
-import { Project } from '../layouts/Project';
+import { Titles } from '@/components/atomic/Titles';
+import { Project } from '@/components/layouts/Project';
 import { Pointer, Blend} from 'lucide-react';
-import { ContactMe } from '../atomic/Buttons';
+import { ContactMe } from '@/components/atomic/Buttons';
 
 export const Proyectos = () => {
   return (

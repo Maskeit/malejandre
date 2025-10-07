@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import cv from "../../../cv.json";
-import { Titles, Parragraph } from "../atomic/Titles";
-import { ExperienciaCard } from "../molecular/ExperienciaCard";
+import { Titles, Parragraph } from "@/components/atomic/Titles";
+import { ExperienciaCard } from "@/components/molecular/ExperienciaCard";
 
 
-import { Work, Skills} from "../../types/cv";
-import { LanguageIcon } from "../atomic/Icons";
+import { Work, Skills} from "@/types/cv";
+import { LanguageIcon } from "@/components/atomic/Icons";
 
 import "./styles/experiencia.css";
 

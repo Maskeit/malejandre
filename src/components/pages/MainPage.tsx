@@ -1,6 +1,6 @@
 import './styles/MainPage.css'
-import { Hero } from "../layouts/Hero";
-import { Experiencia } from "../layouts/Experiencia";
+import { Hero } from "@/components/layouts/Hero";
+import { Experiencia } from "@/components/layouts/Experiencia";
 
 export const MainPage = () => {
   return (

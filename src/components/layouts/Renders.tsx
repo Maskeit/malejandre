@@ -1,12 +1,12 @@
-import { Render } from "../molecular/Render";
-import { Parragraph, Titles } from "../atomic/Titles";
+import { Render } from "@/components/molecular/Render";
+import { Parragraph, Titles } from "@/components/atomic/Titles";
 import "./styles/renders.css";
-import render1 from "../../assets/renders/Render1.webp";
-import render2 from "../../assets/renders/Render2.webp";
-import render3 from "../../assets/renders/Render3.webp";
-import render4 from "../../assets/renders/Render4.webp";
-import render5 from "../../assets/renders/Render5.webp";
-import render6 from "../../assets/renders/Render6.webp";
+import render1 from "@/assets/renders/Render1.webp";
+import render2 from "@/assets/renders/Render2.webp";
+import render3 from "@/assets/renders/Render3.webp";
+import render4 from "@/assets/renders/Render4.webp";
+import render5 from "@/assets/renders/Render5.webp";
+import render6 from "@/assets/renders/Render6.webp";
 
 export const Renders = () => {
   return (
@@ -19,7 +19,7 @@ export const Renders = () => {
         <Render src={render5}  />
         <Render src={render6}  />
       </div>
-      <Parragraph text="More renders coming soon..." color="main-color" fontSize="fs-cero"/>
+      <Parragraph text="More renders coming soon..." color="main-color" fontSize="fs-cero" animation="" />
     </section>
   );
 };

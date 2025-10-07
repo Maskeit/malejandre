@@ -57,7 +57,7 @@ export interface Education{
 export interface Skills{
   name:string;
   level:string;
-  keyworkds:string[];
+  keywords:string[];
 }
 
 export interface Languages{

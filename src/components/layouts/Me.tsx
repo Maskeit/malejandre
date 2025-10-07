@@ -1,14 +1,14 @@
 
-import { Titles, Parragraph } from "../atomic/Titles";
+import { Titles, Parragraph } from "@/components/atomic/Titles";
 
-import { Image } from "../atomic/Images";
-import bass from '../../assets/images/bass1.webp'
-import charla from '../../assets/images/charla22.webp'
-import charla2 from '../../assets/images/conf1.webp'
+import { Image } from "@/components/atomic/Images";
+import bass from '@/assets/images/bass1.webp'
+import charla from '@/assets/images/charla22.webp'
+import charla2 from '@/assets/images/conf1.webp'
 
-import { MyHistoryCard } from "../molecular/MyHistoryCard";
+import { MyHistoryCard } from "@/components/molecular/MyHistoryCard";
 
-import avatar from "../../assets/images/miguel_04.svg";
+import avatar from "@/assets/images/miguel_04.svg";
 
 import "./styles/me.css";
 export const Me = () => {

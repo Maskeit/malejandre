@@ -1,9 +1,9 @@
 import './styles/Education.css'
-import { Titles, Parragraph } from '../atomic/Titles'
-import { Image, Thumbnail } from '../atomic/Images'
-import { Volunter } from '../../types/cv'
+import { Titles, Parragraph } from '@/components/atomic/Titles'
+import { Image, Thumbnail } from '@/components/atomic/Images'
+import { Volunter } from '@/types/cv'
 import cv from "../../../cv.json"
-import miguel from  '../../assets/images/miguel-arbol.webp'
+import miguel from  '@/assets/images/miguel-arbol.webp'
 export const Education = () => {
 
     const educationDesc = cv.volunter.educationSummary;

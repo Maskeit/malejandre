@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import './styles/icons.css'
-import { Skills, Profile} from '../../types/cv'
+import { Skills, Profile} from '@/types/cv'
 
-import Linkedin from '../../../public/icons/Linkedin';
-import Github from '../../../public/icons/Github';
-import Gmail from '../../../public/icons/Gmail';
+import Linkedin from '@/components/icons/Linkedin';
+import Github from '@/components/icons/Github';
+import Gmail from '@/components/icons/Gmail';
 
 
 // Objeto para mapear los nombres de red a los componentes SVG
-const ICONS = {
+const ICONS: Record<string, React.ElementType> = {
   linkedin: Linkedin,
   github: Github,
   gmail: Gmail
@@ -20,7 +20,7 @@ export const LanguageIcon = ({ name }: Skills) => {
     // Importación dinámica basada en la prop 'name'
     const importIcon = async () => {
       try {
-        const { default: ImportedIcon } = await import(`../../../public/icons/${name}.tsx`);
+        const { default: ImportedIcon } = await import(`@/components/icons/${name}.tsx`);
         setIcon(() => ImportedIcon); // Actualizar el estado con el componente importado
       } catch (err) {
         console.error(`No se pudo importar el icono: ${name}`, err);
@@ -43,9 +43,9 @@ export const LanguageIcon = ({ name }: Skills) => {
 
 
 
-export const IconLanguage = ({ name }) =>{
+export const IconLanguage = ({ name }: { name: string }) =>{
   return(
-    <img className="language-icon" src={`/icons/${name}.tsx`} alt={name}/>
+    <img className="language-icon" src={`/icons/${name}.svg`} alt={name}/>
   );
 };
 
